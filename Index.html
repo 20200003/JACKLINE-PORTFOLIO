@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackline Kagendo Peter | Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #2d3436;
+            --accent: #6c5ce7;        /* Deep Violet */
+            --accent-light: #a29bfe;  /* Soft Purple */
+            --whatsapp-green: #25D366;
+            --text: #2d3436;
+            --bg: #f9f8ff;            /* Light Lavender Tint */
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            margin: 0;
+        }
+
+        /* Split Header Design - Image Left, Text Right */
+        header {
+            background: #ffffff;
+            padding: 4rem 2rem;
+            box-shadow: 0 4px 15px rgba(108, 92, 231, 0.1);
+        }
+
+        .header-container {
+            max-width: 950px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .header-image {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end; /* Pushes image toward the center divider */
+            min-width: 280px;
+        }
+
+        .header-content {
+            flex: 1;
+            text-align: left;
+            min-width: 300px;
+        }
+
+        .profile-img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid var(--accent);
+            box-shadow: 0 15px 30px rgba(108, 92, 231, 0.2);
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.8rem;
+            margin: 0 0 0.5rem 0;
+            line-height: 1.1;
+        }
+
+        .accent-text {
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.3rem;
+            display: block;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .container { max-width: 950px; margin: 2rem auto; padding: 0 1rem; }
+
+        section {
+            background: white;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+        }
+
+        h2 {
+            color: var(--accent);
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+            margin-bottom: 1.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-tag {
+            background: #f1f0ff;
+            color: var(--accent);
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin: 5px 2px;
+            font-weight: 600;
+            border: 1px solid var(--accent-light);
+        }
+
+        /* Contact Section */
+        .contact-container { text-align: center; padding: 1rem 0; }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp-green);
+            color: white !important;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-whatsapp i { margin-right: 12px; font-size: 1.6rem; }
+
+        .secondary-links { display: flex; justify-content: center; gap: 40px; margin-top: 25px; }
+        .secondary-links a { color: var(--primary); text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .secondary-links a i { color: var(--accent); margin-right: 8px; }
+        .secondary-links a:hover { color: var(--accent); }
+
+        footer { text-align: center; padding: 3rem; color: #a29bfe; font-weight: 500; }
+
+        /* Mobile Responsive logic */
+        @media (max-width: 768px) {
+            .header-container { text-align: center; gap: 2rem; }
+            .header-image, .header-content { justify-content: center; text-align: center; }
+            h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="header-image">
+            <img src="images/profilee.jpeg" alt="Jackline Kagendo Peter" class="profile-img">
+        </div>
+
+        <div class="header-content">
+            <span class="accent-text">Hello, I'm</span>
+            <h1>Jackline Kagendo Peter</h1>
+            <span class="accent-text">Full-Stack Developer</span>
+            <span class="accent-text">Data Analyst</span>
+            <span class="accent-text">Biochemist</span>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a <strong>Bachelor's degree holder in Biochemistry</strong> and a highly detail-oriented professional specializing in the intersection of <strong>Technical Development and Analytical Research</strong>. With a strong background in web design and backend architecture, I provide precision-driven solutions as an independent contractor. My expertise extends beyond coding into the realm of <strong>AI Annotations, scientific graphing, and data-centric design</strong>, ensuring that every project is both technically sound and analytically grounded.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Technical Skills</h3>
+                <span class="skill-tag">Python (Django)</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">HTML5 & CSS3</span>
+                <span class="skill-tag">Web Design</span>
+                <span class="skill-tag">AI Annotations</span>
+                <span class="skill-tag">AI Design</span>
+            </div>
+            <div class="skill-category">
+                <h3>Analytical Skills</h3>
+                <span class="skill-tag">Biostatistical Analysis</span>
+                <span class="skill-tag">Scientific Graphing</span>
+                <span class="skill-tag">Data Visualization</span>
+                <span class="skill-tag">Research Methodology</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Connect With Me</h2>
+        <div class="contact-container">
+            <a href="https://wa.me/254716426232" target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+
+            <div class="secondary-links">
+                <a href="mailto:Kjackpeter9@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://www.instagram.com/Jackie_amidh" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2026 Jackline Kagendo Peter. All Rights Reserved.
+</footer>
+
+</body>
+</html>
